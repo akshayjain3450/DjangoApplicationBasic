@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <h1>Welome to my Assignemnt - Akshay Jain</h1>
+        <h2>Sign IN</h2>
+        {% if error %}
+        <h4>{{ error }}</h4>
+        {% endif %}
+        <form method = "POST" action = "{% url 'login' %}">
+        {% csrf_token %}
+            <label class = "username"> Username </label>
+                <input type = "text" name = "username">
+            <label class = "label"> Password </label>
+                <input type = "password" name = "password">
+            <button type = "submit"> Login IN </button>
+        </form>
+        <a href = "{% url 'signup' %}"> Register yourself! </a>
+    </body>
+</html>

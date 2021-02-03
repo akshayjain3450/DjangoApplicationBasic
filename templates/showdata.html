@@ -1,0 +1,14 @@
+<html>
+
+<body>
+    <h1> Data Display </h1>
+    {% for d in data %}
+    <div>
+    <h7> Name: {{ d.fullname }} </h7>
+    <h7> Email: {{ d.email }} </h7>
+    <h7> Role: {{ d.role }} </h7>
+    </div>
+    {% endfor %}
+</body>
+    
+</html>
