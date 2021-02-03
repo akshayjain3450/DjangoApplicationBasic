@@ -51,5 +51,5 @@ def logout(request):
 
 @login_required(login_url = '/login/')
 def showuserdata(request):
-    datas = extendeduser.objects.all()
+    datas = extendeduser.objects.all()[0:10]
     return render(request, "showdata.html", {'data': datas})
