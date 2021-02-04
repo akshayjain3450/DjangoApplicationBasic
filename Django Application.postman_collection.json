@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "953b5d23-e52a-40e5-a380-f689e0297dbd",
+		"name": "Django Application",
+		"description": "This collection will help you to test the Rest APIs for the Django Basic Application.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/accounts/signup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "test_new",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "test_new",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "SoftwareDev",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test_new@email.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "test_new",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/accounts/signup",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"accounts",
+						"signup"
+					]
+				},
+				"description": "Sign UP"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/accounts/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "test3",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "test3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/accounts/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"accounts",
+						"login"
+					]
+				},
+				"description": "Login Test API"
+			},
+			"response": []
+		}
+	]
+}
